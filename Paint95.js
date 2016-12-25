@@ -12,6 +12,7 @@ function init(){
 	menu();
 	Canvas();
 	grid();
+	clear();
 	//eraserSize();
 }
 
@@ -105,7 +106,8 @@ function clearScreen(){
 //la fonction qui va tout effacer. 
 function clear(){
 	var clearScreen=document.getElementsByClassList("grid");
-	for( var g=0; g<=clearScreen.length, g++){
+	for(var g=0; g<= clearScreen.length, g++)
+	{
 		clearScreen[g].style.backgroundColor="white";
 	}
 }
